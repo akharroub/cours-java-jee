@@ -1,0 +1,4 @@
+@charset "ISO-8859-1";
+tr,td{
+	border: red , solid , 2px;
+}

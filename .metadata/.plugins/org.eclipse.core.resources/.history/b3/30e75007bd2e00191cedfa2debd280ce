@@ -1,0 +1,81 @@
+package fr.akharroub.users.business.impl;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+
+import fr.akharroub.users.bean.Users;
+import fr.akharroub.users.business.IUsersBusiness;
+
+public class UsersBusiness implements IUsersBusiness{
+
+	@Override
+	public ArrayList<Users> recupLaListeDesUsers() {
+		ArrayList<Users> ListeDesUsers = new ArrayList<>();
+
+		try {
+			Class.forName("org.mariadb.jdbc.Driver");
+			Connection cnx = DriverManager.getConnection(
+					"jdbc:mariadb://localhost:3306/users", "root", "");
+
+			Statement st = cnx.createStatement();
+			ResultSet resultat = 
+					st.executeQuery("SELECT id,nom,prenom,numero,phone,email,adresse,photo FROM utilisateur");
+
+			while (resultat.next()) {
+				int iduser =  resultat.getInt("id");
+				String nomuser = resultat.getString("nom");
+				String prenomuser = resultat.getString("prenom");
+				int numerouser = resultat.getInt("numero");
+				String phoneuser = resultat.getString("phone");
+				String emailuser = resultat.getString("email");
+				String adresseuser = resultat.getString("adresse");
+				String photouser = resultat.getString("photo");
+
+				Users per = new Users(iduser, nomuser, prenomuser, numerouser, phoneuser, emailuser, adresseuser, photouser);
+				ListeDesUsers.add(per);
+
+
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+
+
+
+		return ListeDesUsers;
+	}
+
+	@Override
+	public Users findOne(int id) {
+		
+		try {
+			Class.forName("org.mariadb.jdbc.Driver");
+			Connection cnx = DriverManager.getConnection("jdbc:mariadb://localhost:3306/users", "root", "");
+			Statement st = cnx.createStatement();
+			ResultSet resultat = st.executeQuery("SELECT nom,prenom,numero,phone,email,adresse,photo FROM utilisateur where id =" + id);
+			
+			while (resultat.next()) {
+				int iduser =  resultat.getInt("id");
+				String nomuser = resultat.getString("nom");
+				String prenomuser = resultat.getString("prenom");
+				int numerouser = resultat.getInt("numero");
+				String phoneuser = resultat.getString("phone");
+				String emailuser = resultat.getString("email");
+				String adresseuser = resultat.getString("adresse");
+				String photouser = resultat.getString("photo");
+
+				Users pers = new Users(iduser, nomuser, prenomuser, numerouser, phoneuser, emailuser, adresseuser, photouser);
+				return pers;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return null;
+	}
+
+}

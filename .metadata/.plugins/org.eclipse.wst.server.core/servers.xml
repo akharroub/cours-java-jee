@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v9.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v9.0 Server at localhost" name="Tomcat v9.0 Server at localhost" runtime-id="Apache Tomcat v9.0" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="11">
+    <list key="modules" value0="site_web_jee::org.eclipse.jst.jee.server:site_web_jee::jst.web::2.5" value1="pizzeria::org.eclipse.jst.jee.server:pizzeria::jst.web::4.0" value2="pizza_mvn::org.eclipse.jst.jee.server:pizza_mvn::jst.web::2.5" value3="utilisateur-db::org.eclipse.jst.jee.server:utilisateur-db::jst.web::4.0" value4="UserMgt::org.eclipse.jst.jee.server:UserMgt::jst.web::4.0" value5="pattern_mvc::org.eclipse.jst.jee.server:pattern_mvc::jst.web::4.0" value6="produit::org.eclipse.jst.jee.server:produit::jst.web::4.0" value7="premier_project_jee::org.eclipse.jst.jee.server:premier_project_jee::jst.web::2.5" value8="base-de-donne::org.eclipse.jst.jee.server:base-de-donne::jst.web::4.0" value9="produits::org.eclipse.jst.jee.server:produits::jst.web::4.0"/>
+  </server>
+</servers>

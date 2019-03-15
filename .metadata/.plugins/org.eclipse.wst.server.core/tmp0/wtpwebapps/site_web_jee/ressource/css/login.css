@@ -1,0 +1,14 @@
+
+#titre{
+	text-align: center;
+}
+input{
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+form{
+	width: 210px;
+    margin: auto;
+    color: #0080ff;
+}

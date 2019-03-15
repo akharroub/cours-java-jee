@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;fr.akharroub.produits.Utilisateur&apos; to &apos;UtilisateurServlet&apos;&#x0D;&#x0A;- Original project: &apos;produits&apos;&#x0D;&#x0A;- Original element: &apos;fr.akharroub.produits.Utilisateur&apos;&#x0D;&#x0A;- Renamed element: &apos;fr.akharroub.produits.UtilisateurServlet&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Utilisateur&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;fr.akharroub.produits{Utilisateur.java[Utilisateur" matchStrategy="1" name="UtilisateurServlet" qualified="false" references="true" similarDeclarations="false" stamp="1548943936337" textual="false" version="1.0"/>
+</session>

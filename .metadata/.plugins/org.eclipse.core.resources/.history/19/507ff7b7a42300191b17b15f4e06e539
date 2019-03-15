@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>page d'accueil</title>
+</head>
+<body>
+
+<h1>Accueil</h1>
+<p>Cérémonie ou prestation réservée à un nouvel arrivant,<br> consistant généralement à lui souhaiter la bienvenue et à l’aider dans son intégration ou ses démarches.</p>
+<ul>
+<li>html</li>
+<li>css</li>
+<li>javascript</li>
+<li>sql</li>
+</ul>
+<%
+System.out.println("hello.java");
+%>
+
+</body>
+</html>

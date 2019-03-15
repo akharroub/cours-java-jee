@@ -1,0 +1,50 @@
+package fr.akharroub.jee;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class HelloServlet
+ */
+public class HelloServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public HelloServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter()
+		.append("<h1>hello</h1>")
+		.append("<ul>")
+		.append("<li>html</li>")
+		.append("<li>java</li>")
+		.append("<li>css</li>")
+		.append("</ul>")
+		.append("<p>Vous connaissez forcément Twitter, un des principaux réseaux sociaux qui inondent la planète de liens virtuels entre les humains devenus des noyaux cybernétiques."
+				+ " Le projet Bootstrap a été créé au départ par Mark Otto et Jacob Thornton pour répondre à des besoins internes de"
+				+ " développement de cette entreprise au niveau de l'uniformisation de l'aspect des pages web.<br>"
+				+ " Il s'agissait juste de stylisation CSS, mais le framework s'est ensuite enrichi de composants Javascript.</p>")
+		.append("hello , je suis la méthode doget de la classe helloservlet");
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

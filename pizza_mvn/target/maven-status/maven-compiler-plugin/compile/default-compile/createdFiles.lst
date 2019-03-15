@@ -1,0 +1,10 @@
+fr\akharroub\pizzeria\pizza\busniess\IPizzaBusniess.class
+fr\akharroub\pizzeria\pizza\busniess\impl\PizzaBusniess.class
+fr\akharroub\pizzeria\pizza\controller\AjouterPizzaServlet.class
+fr\akharroub\pizzeria\pizza\controller\InfoPizzaServlet.class
+fr\akharroub\pizzeria\pizza\controller\SupprimerPizza.class
+fr\akharroub\pizzeria\pizza\repository\impl\RepositoryPizza.class
+fr\akharroub\pizzeria\pizza\controller\PizzaServlet.class
+fr\akharroub\pizzeria\pizza\bean\Pizza.class
+fr\akharroub\pizzeria\pizza\controller\ModifierPizzaServlet.class
+fr\akharroub\pizzeria\pizza\repository\IRepositoryPizza.class
